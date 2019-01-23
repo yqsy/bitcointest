@@ -79,7 +79,6 @@ def sense3(preOutPut, receiverP2PKHScriptPubkey, receiverSeckey, redeemScript, s
         senderSig = senderSeckey.sign(sighash) + bytes([SIGHASH_ALL])
 
         # 用户将签名和交易给商家
-
         receiverSig = receiverSeckey.sign(sighash) + bytes([SIGHASH_ALL])
 
         # 商家提供服务, 并签名交易做结算用
